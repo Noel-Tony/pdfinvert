@@ -1,6 +1,7 @@
 {
   "name": "pdfinvert",
   "version": "1.0.0",
+ "homepage": "https://noel-tony.github.io/pdfinvert",
   "private": true,
   "scripts": {
     "dev": "vite",
