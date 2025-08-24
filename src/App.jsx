@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";   // 👈 add React here
 import { PDFDocument, rgb } from "pdf-lib";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     const arrayBuffer = await file.arrayBuffer();
     const pdfDoc = await PDFDocument.load(arrayBuffer);
 
-    // Iterate pages and invert text colors (simple demo)
+    // Iterate pages and invert text colors (demo)
     const pages = pdfDoc.getPages();
     pages.forEach((page) => {
       page.drawRectangle({
